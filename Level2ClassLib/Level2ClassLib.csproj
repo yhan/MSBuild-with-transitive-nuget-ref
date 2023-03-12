@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <ProjectGuid>{F9FE427C-B0B1-48D6-BC1D-37CB4689FF7A}</ProjectGuid>
+    <TargetFramework>net471</TargetFramework>
+    <AssemblyTitle>Level2ClassLib</AssemblyTitle>
+    <Product>Level2ClassLib</Product>
+    <Copyright>Copyright ©  2023</Copyright>
+    <OutputPath>bin\$(Configuration)\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Level3ClassLib\Level3ClassLib.csproj" />
+  </ItemGroup>
+</Project>
